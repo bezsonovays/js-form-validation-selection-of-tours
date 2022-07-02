@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+/*--------------------*/
+
+.emtyInput,
+.valid {
+    border: 1px solid rgb(222 57 57) !important;
+    background: #ffe1e1 !important;
+}
+
+.ActionPage-container {
+    background: #e5e5e5;
+    box-sizing: border-box;
+}
+
+.ActionPage-container *,
+body {
+    box-sizing: border-box;
+    color: #303030;
+    font-family: "Open Sans", sans-serif !important;
+}
+.action__wrapper,
+.popUp__block {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px !important;
+    color: #3c3c3b !important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.ActionPage-container .static {
+    width: 100%;
+}
+
+section {
+    padding: 2.5em 0;
+    background-color: #e5e5e5;
+    box-shadow: unset;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 100%;
+}
+.header {
+    background: url(img/main-banner.jpg) no-repeat;
+    height: 60vh;
+    background-position: center;
+    max-width: 1920px;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: #e5e5e5;
+}
+
+.actionTitle,
+.title-google-table {
+    text-transform: uppercase;
+    font-size: 2.25em;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 700;
+}
+
+/**************************************/
+
+.selectionTours__title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.selectionTours__form {
+    margin-bottom: 2em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "b1 b2 b3 b4 b5"
+        "b6 b6 b6 b6 b7";
+}
+
+.b1 {
+    grid-area: b1;
+}
+.b2 {
+    grid-area: b2;
+}
+.b3 {
+    grid-area: b3;
+}
+.b4 {
+    grid-area: b4;
+}
+.b5 {
+    grid-area: b5;
+}
+.b6 {
+    grid-area: b6;
+}
+.b7 {
+    grid-area: b7;
+}
+
+.selectionTours__form input {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 18px;
+    outline: none;
+    border: none;
+}
+.selectionTours__form input::placeholder {
+    font-size: 0.85em;
+}
+.selectionTours__btn {
+    font-weight: 600;
+    line-height: 1;
+    background-color: #ffcb22;
+    padding: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.selectionTours__btn:hover,
+.concepts__btn:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.concepts__text {
+    font-size: 14px;
+}
+/***************************************/
+.additional__space {
+    padding: 5em 0;
+}
+/*************************************/
+.blue__backround {
+    background: #5273f6;
+    backdrop-filter: blur(128px);
+    padding-bottom: 8em;
+}
+.blue__backround * {
+    color: #fff;
+}
+.concepts__blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+.concepts__block {
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.concepts__img img {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 290px;
+}
+
+.concepts__img {
+    margin-bottom: 20px;
+}
+
+.concepts {
+    padding: 3em 0;
+}
+.concepts__subtitle {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.concepts__btn {
+    color: #000;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85em;
+    border-radius: 10px;
+    padding: 20px 50px;
+    cursor: pointer;
+    max-width: 360px;
+}
+
+.concepts__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0 0 0;
+    cursor: pointer;
+}
+/*************************************/
+.advantage__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantage__item {
+    background: url(img/advantage_bg.png) no-repeat;
+    background-position: bottom;
+    height: 250px;
+    width: 290px;
+    position: relative;
+    box-shadow: 0 7em 2rem 2px rgb(0 0 0 / 2%);
+    margin: 5px;
+}
+.advantage__img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.advantage__text {
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    color: #fff;
+    left: 10%;
+    width: 80%;
+    font-size: 1em;
+    font-weight: 600;
+}
+/**************POP UP***************/
+.popUp__block {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 35px;
+    max-width: 500px;
+    margin: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.popUp__bg {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 99;
+}
+
+.popUp__close {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.popUp__title {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+.popUp__img {
+    display: flex;
+    justify-content: center;
+}
+.popUp__body p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/**********************************/
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+    .action__container-content,
+    .actions__wraper {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 768px;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .header__text h1 {
+        font-size: 2.2em !important;
+    }
+    .actionTitle {
+        font-size: 2em;
+    }
+
+    .header {
+        height: 86vh;
+        background-position: 73% center;
+        background-size: cover;
+    }
+    .selectionTours {
+        padding: 1em 0 0 0;
+    }
+    .selectionTours__form {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "b1 b1"
+            "b2 b2"
+            "b3 b3"
+            "b4 b5"
+            "b6 b6"
+            "b7 b7";
+    }
+    .selectionTours__title {
+        font-size: 2em !important;
+        text-align: center !important;
+        text-transform: unset !important;
+        margin-bottom: 1em !important;
+    }
+    .selectionTours__form input {
+        width: 100%;
+        padding: 14px;
+    }
+    .concepts__blocks {
+        grid-template-columns: 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 30px;
+        text-align: center;
+    }
+    .advantage__item {
+        margin: 20px auto;
+    }
+    .advantage__text {
+        font-size: 1.2em;
+    }
+    .concepts__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .additional__space {
+        padding: 3em 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .selectionTours__btn {
+        padding: 18px 20px;
+    }
+    .concepts__blocks {
+        grid-template-columns: repeat(4, 1fr) !important;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1430px) {
+    .actions__wraper {
+        font-size: 14px;
+    }
+    .container,
+    .selectionTours__form {
+        max-width: 1020px;
+    }
+    .advantage__block {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .concepts__blocks {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}

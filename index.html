@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://www.tui.ua/getmedia/36962c36-4020-47e1-a39e-28ff6461d40d/style?4" rel="stylesheet"> -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+ 
+<div class="action__wrapper">
+    <div class="action__container-content">
+    <header class="header"> 
+        <div class="container">
+        <div class="selectionTours">
+                <h1 class="selectionTours__title"  style="font-size: 2.75em; margin-bottom: 0.6em; text-transform: uppercase; text-align: left; color:#fff; font-weight: 700;">Отримайте добірку турів в один клік!</h1>
+                <div class="selectionTours__form" data-table="бажаєте отримати персональну добірку турів зі знижкою">
+                  
+                      
+                                <input type="text" placeholder="Ваше ім’я" class="b1">
+                                <input type="text" placeholder="Куди летимо?" class="b2">
+                                <input type="number" placeholder="Кількість днів" class="b3">
+                                <input type="number" placeholder="Кількість людей" class="b4">
+                                <input  class="phone" type="text" placeholder="Ваш номер телефону" class="b5">
+                                <input type="text" placeholder="Побажання щодо подорожі" class="b6">
+                                <a onclick="sendForm(this)" class="selectionTours__btn b7">Хочу добірку!</a>
+                
+                </div>
+            </div>
+        </div>
+   </header>
+    <div class="popUp">
+    </div>
+    <main>
+    <section>
+        <div class="container">
+            <div class="advantage additional__space">
+                <div class="advantage__title actionTitle">Переваги відпочинку з нами</div>
+                <div class="advantage__block">
+                    <div class="advantage__item">
+                        <div class="advantage__img" >
+                            <img src="img/Cards.png">
+                        </div>
+                        <div class="advantage__text">Пропонуємо кращі ціни на тури</div>
+                    </div>
+
+                    <div class="advantage__item">
+                        <div class="advantage__img">
+                            <img src="img/Message.png">
+                        </div>
+                        <div class="advantage__text">Спілкуємось в зручному для вас месенджері</div>
+                    </div>
+
+                    <div class="advantage__item">
+                        <div class="advantage__img">
+                            <img src="img/Warning.png">
+                        </div>
+                        <div class="advantage__text">Проводимо постійні акції та даруємо подарунки</div>
+                    </div>
+
+                    <div class="advantage__item">
+                        <div class="advantage__img">
+                            <img src="img/Clock.png">
+                        </div>
+                        <div class="advantage__text">А також швидко оформляємо документи</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        
+        <section class="blue__backround">
+            <div class="container">
+                <div class="concepts parentModal" data-table="підберемо кращий відпочинок для кожного">
+                    <div class="concepts__title actionTitle">Підберемо кращий відпочинок для кожного!</div>
+                    <div class="concepts__blocks">
+
+                        <div class="concepts__block">
+                            <div class="concepts__img">
+                                <img src="img/concepts/family.png" alt="Family">
+                            </div>
+                            <div class="concepts__subtitle">
+                                Family
+                            </div>
+                            <div class="concepts__text">
+                                Концепція FUN&SUN FAMILY ідеальна для родин з дітьми. Тут враховані інтереси кожного!
+                            </div>
+                        </div>
+
+                        <div class="concepts__block">
+                            <div class="concepts__img">
+                                <img src="img/concepts/active.png" alt="Active">
+                            </div>
+                            <div class="concepts__subtitle">
+                                Active
+                            </div>
+                            <div class="concepts__text">
+                                Для тих, хто любить відірватися по повній. Кращий варіант для відпочинку компанією.
+                            </div>
+                        </div>
+
+                        <div class="concepts__block">
+                            <div class="concepts__img">
+                                <img src="img/concepts/smart.png" alt="Smart">
+                            </div>
+                            <div class="concepts__subtitle">
+                                Smart
+                            </div>
+                            <div class="concepts__text">
+                                Для тих, хто цінує відпочинок за розумні кошти та завжди шукає пригод.
+                            </div>
+                        </div>
+
+                        <div class="concepts__block">
+                            <div class="concepts__img">
+                                <img src="img/concepts/premium.png" alt="Premium">
+                            </div>
+                            <div class="concepts__subtitle">
+                                Premium
+                            </div>
+                            <div class="concepts__text">
+                                Для тих, хто завжди обирає ексклюзивний відпочинок.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concepts__row">
+                        <a class="concepts__btn" href="https://www.tui.ua/concepts/home/" target="_blank">Детальніше про концепції</a>
+                    </div>
+                </div>             
+            </div>
+        </section>
+    </main>
+
+</div>
+
+</div>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="./scripts/all.js"></script>  
+
+</body>
+</html>
+
+
+
+
+<!-- <script type="text/javascript">
+    var newScript = document.createElement("script");
+            newScript.src =
+                "https://agent.tui.ua/getmedia/0f11ff34-a3f0-4043-b4d9-7db688183981/add_files?v=01082019";
+            document.head.appendChild(newScript);
+
+            newScript.onload = function () {
+                add_files(
+                    [
+                        "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js",
+                        "https://www.tui.ua/getmedia/e71355c7-3f84-4f9e-9239-d5f0a1d69b70/jquery-maskedinput-min",
+                        "https://www.tui.ua/getmedia/e2baf7d9-34e9-4f83-86b2-f2afccd0984a/all?3"                       
+                    ],
+                    "script"
+                );
+            };
+</script> -->
+
+
+
+
+
+
